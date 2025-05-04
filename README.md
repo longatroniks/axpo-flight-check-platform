@@ -7,7 +7,6 @@ This repository orchestrates the full-stack **Axpo Flight Check Platform**, comb
 
 This setup uses **Docker Compose** to simplify local development and deployment. With one command, both services are up and running.
 
----
 
 ## Tech Stack
 
@@ -29,7 +28,6 @@ This setup uses **Docker Compose** to simplify local development and deployment.
 - Docker Compose
 - NGINX (for frontend)
 
----
 
 ## Quick Start
 
@@ -59,7 +57,6 @@ docker compose up --build
 - Frontend: [http://localhost:3000](http://localhost:3000)
 - Backend API: [http://localhost:8000/api/assets](http://localhost:8000/api/assets)
 
----
 
 ## Project Structure
 
@@ -79,7 +76,6 @@ axpo-flight-platform/
 └── README.md
 ```
 
----
 
 ## Environment Variables
 
@@ -98,7 +94,6 @@ VITE_LOCATIONS_API_URL=http://localhost:8000/api/assets
 
 Adjust `VITE_LOCATIONS_API_URL` as needed to match the Docker service.
 
----
 
 ## Testing
 
@@ -109,13 +104,11 @@ npm run cypress:open     # Opens the Cypress test runner
 npm run cypress:run      # Runs E2E tests in headless mode
 ```
 
----
 
 ## Deployment
 
 You can deploy each service independently with Vercel or a VPS, or together using this repo on a container hosting provider.
 
----
 
 ## API Reference
 
@@ -135,8 +128,6 @@ Returns a list of geospatial assets with metadata.
 ]
 ```
 
----
-
-## 🛠️ Contributing
+## Contributing
 
 Each submodule (frontend/backend) should follow its own contribution and coding guidelines. This repo is for orchestration and deployment only.
