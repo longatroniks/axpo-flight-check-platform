@@ -1,0 +1,20 @@
+version: '3.9'
+
+services:
+  backend:
+    build:
+      context: ./axpo-drone-data-api
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./axpo-drone-data-api/assets.csv:/app/assets.csv
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./axpo-flight-area-check
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+    restart: unless-stopped

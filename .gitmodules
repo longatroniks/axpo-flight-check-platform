@@ -1,0 +1,6 @@
+[submodule "axpo-flight-area-check"]
+	path = axpo-flight-area-check
+	url = https://github.com/longatroniks/axpo-flight-area-check
+[submodule "axpo-drone-data-api"]
+	path = axpo-drone-data-api
+	url = https://github.com/longatroniks/axpo-drone-data-api
