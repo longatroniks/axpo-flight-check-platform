@@ -1,6 +1,6 @@
-# Axpo Flight Check Platform
+# Flight Check Platform
 
-This repository orchestrates the full-stack **Axpo Flight Check Platform**, combining:
+This repository orchestrates the full-stack **Flight Check Platform**, combining:
 
 - A Flask-based backend API serving geospatial asset data from CSV
 - A React + Vite frontend for checking drone flight area restrictions and population density
@@ -34,8 +34,8 @@ This setup uses **Docker Compose** to simplify local development and deployment.
 ### 1. Clone this deployment repo
 
 ```bash
-git clone https://github.com/your-org/axpo-flight-platform.git
-cd axpo-flight-platform
+git clone https://github.com/your-org/-flight-platform.git
+cd -flight-platform
 ```
 
 > This repo includes both frontend and backend as Git submodules.
@@ -61,7 +61,7 @@ docker compose up --build
 ## Project Structure
 
 ```
-axpo-flight-platform/
+-flight-platform/
 ├── backend/               # Flask REST API (submodule or folder)
 │   ├── app.py
 │   ├── assets.csv
